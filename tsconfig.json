@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "declaration": false,
+        "mapRoot": "./",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "outDir": "./app",
+        "sourceMap": true,
+        "allowJs": true,
+        "importHelpers": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "jsx": "react",
+        "target": "es5",
+        "strict": true,
+        "checkJs": false,
+        "allowUnreachableCode": true,
+        "noImplicitAny": false,
+        "suppressImplicitAnyIndexErrors": false,
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "lib": ["es2017", "es2015.promise", "dom", "scripthost"]
+    },
+    "include": [
+        "./js/src/**/*"
+    ],
+    "exclude": [
+        "./node_modules/*"
+    ]
+}

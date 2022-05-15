@@ -1,0 +1,553 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+ul.nav {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: solid silver 2px;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    width: 100%;
+    border-bottom: solid silver 1px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav li {
+    display: block;
+    float: left;
+    margin: 0 5px;
+}
+
+.navbar-nav li a {
+    padding: 10px 10px;
+    font-size: 20px;
+    float: left;
+}
+
+ul {}
+
+ul.ctx-menu {
+    list-style-type: none;
+    margin: 0;
+}
+
+ul.ctx-menu li {
+    margin: 0;
+    padding: 7px 5px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+ul.ctx-menu li:not(:last-child) {
+    border-bottom: 0;
+}
+
+.ctx-menu {
+    width: auto;
+    position: absolute;
+    z-index: 10;
+}
+
+.ctx-menu a,
+.ctx-menu .link {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    padding: 5px 5px;
+    margin: -3px -5px;
+}
+
+.ctx-menu a:hover,
+.ctx-menu .link:hover {
+    background: #efefef;
+}
+
+ul ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+}
+
+ul li:hover ul {
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: calc(100% - 40px);
+}
+
+ul li:hover ul li {}
+
+.grid {
+    float: left;
+}
+
+.grid-container {
+    float: left;
+    width: auto;
+    padding: 0px;
+    border-radius: 3px;
+}
+
+ul ul li {
+    min-width: 170px;
+    display: list-item;
+}
+
+.xxx {
+    width: 200px;
+    height: 150px;
+    border: solid green 3px;
+    float: left;
+}
+
+.other {
+    float: left;
+    width: 100%;
+    margin: 15px 0;
+}
+
+#grid {
+    float: left;
+    max-width: 900px;
+    width: 100%;
+}
+
+.grid-filter {
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.grid {
+    border: solid rgba(0, 0, 0, 0.1) 1px;
+    border-radius: 3px;
+    padding: 0;
+}
+
+.grid thead th:not(:last-of-type),
+.grid tbody td:not(:last-of-type) {
+    border-right: solid rgba(0, 0, 0, 0.05) 1px;
+}
+
+.grid thead th {
+    padding: 10px 13px;
+    margin: 0;
+}
+
+.grid tbody tr td {
+    margin: 0;
+    padding: 8px 10px;
+}
+
+.grid tbody tr.odd {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.grid tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.grid .grid-sort-order {
+    display: inline-block;
+    padding: 0 0 0 5px;
+}
+
+.grid-editable {
+    cursor: pointer;
+}
+
+td.grid-col-price {
+    text-align: right;
+}
+
+th.grid-sortable:hover {
+    cursor: pointer;
+}
+
+th.grid-is-sorted {
+    font-weight: bold;
+}
+
+.grid-table-loading-hidden {}
+
+.grid-table-loading {
+    background-color: rgba(30, 31, 31, 0.19);
+    z-index: 1000;
+}
+
+.grid-table-loader-loading {
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 50px;
+}
+
+.grid-table-loader-hidden {
+    display: none;
+}
+
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid #fff;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+    0% {
+        top: 28px;
+        left: 28px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: -1px;
+        left: -1px;
+        width: 58px;
+        height: 58px;
+        opacity: 0;
+    }
+}
+
+.ReactTable .rt-th,
+.ReactTable .rt-td {
+    white-space: normal;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.loader-inner-1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: #c7c7c76b;
+}
+
+.loader-inner-2 {
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 250px;
+}
+
+.loader-inner-3 {
+    font-size: 30px;
+}
+
+.form-control {
+    display: inline-block;
+}
+
+.input-num {
+    text-align: center;
+    max-width: 95px;
+    width: auto;
+}
+
+.input-sm {
+    width: 100%;
+    max-width: 100px;
+}
+
+.input-md {
+    width: 100%;
+    max-width: 200px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.help-block {
+    margin: 0 0 0 7px;
+}
+
+.btn-radiogroup label input {
+    display: none;
+}
+
+.btn-radiogroup .checked {
+    font-weight: bold;
+}
+
+.grid-col-quantity_loc {
+    text-align: center;
+}
+
+.grid-col-quantity_ext {
+    text-align: center;
+}
+
+.grid-col-status>div {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.focused {
+    border: dashed green 2px;
+    box-shadow: none;
+}
+
+.focused:focus {
+    box-shadow: none;
+}
+
+.row-change {
+    padding: 0;
+    margin: 0;
+    line-height: 7px;
+    font-weight: bold;
+}
+
+.row-change:hover {}
+
+.row-change-1 {
+    position: relative;
+    top: -8px;
+}
+
+.row-change-3 {
+    position: relative;
+    top: 8px;
+}
+
+.control-panel {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.control-panel button {
+    margin: 0 2px;
+}
+
+.control-panel label {
+    margin: 0 5px 0 0;
+}
+
+.control-panel .formatting {
+    display: inline-block;
+}
+
+.control-panel .add-row {
+    display: inline-block;
+    margin: 0 0 0 20px;
+}
+
+.control-panel .add-column {
+    display: inline-block;
+    margin: 0 0 0 20px;
+}
+
+.control-panel .remove-row {
+    display: inline-block;
+    float: right;
+}
+
+.control-panel .remove-column {
+    display: inline-block;
+    float: right;
+}
+
+.grid-table-container {
+    float: left;
+    width: 100%;
+}
+
+.gid-header {
+    float: left;
+    width: 100%;
+}
+
+.grid-paginator {}
+
+.grid-paginator select {
+    max-width: 100px;
+}
+
+.grid-paginator button {
+    margin: 0 3px;
+}
+
+.grid-filter button[type="submit"] {}
+
+.grid-filter-ctrl {
+    float: left;
+    max-width: 550px;
+    min-width: 120px;
+}
+
+.grid-filter-ctrl label,
+.grid-filter-ctrl input {
+    display: inline-block;
+}
+
+.grid-filter-select {}
+
+.grid-filter-radio {}
+
+.grid-filter-text {}
+
+.grid table > tbody > tr > td {
+    padding: 0 3px
+}
+
+.popupmenu {
+
+}
+.popupmenu-separator {
+    border: solid silver 1px;
+}
+
+.context-menu {
+
+    list-style: none;
+
+}
+.context-menu {
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    list-style: none;
+    user-select: none;
+    margin: -0.25rem 0 0 0.125rem;
+    padding: 0.25rem 0;
+    background-color: #f2f2f2;
+    border: 1px solid #bcbcbc;
+}
+
+.context-menu-option {
+    position: relative;
+    width: 100%;
+    min-width: 9.5rem;
+    margin: 0;
+    padding: 0.25rem 1rem 0.25rem 1.25rem;
+    text-align: left;
+    border-radius: 0;
+    background-color: #f2f2f2;
+    border: none;
+    white-space: nowrap;
+}
+
+.context-menu-option:hover {
+    color: #fff;
+    background-color: #4e95f5;
+}
+
+.context-menu-option:focus {
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+.grid  {
+    max-width: 900px;
+    width: 100%;
+}
+.grid-loading {
+    width: 100%;
+    height: 100%;
+    background-color: #b2b7ba69;
+    float: left;
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+}
+.grid-head {
+    padding: 5px 5px 10px 5px;
+    margin: 0 0 10px 0;
+    border-bottom: solid whitesmoke 2px;
+}
+.grid-table {
+    width: 100%;
+}
+.grid .sortable {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.grid-filters {
+    width: 100%;
+}
+
+.remove-btn {
+    margin-right: 0.5rem;
+}
+
+.item-enter {
+    opacity: 0;
+}
+.item-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+.item-exit {
+    opacity: 1;
+}
+.item-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+
+#grid {
+    max-width: 900px !important;
+}
+
